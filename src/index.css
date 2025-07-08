@@ -1,0 +1,17 @@
+/* Import Tailwind CSS base, components, and utilities */
+@import "tailwindcss";
+
+/* 
+  Set smooth scrolling for the entire HTML document.
+  This makes anchor link navigation scroll smoothly instead of jumping instantly.
+*/
+html{
+    scroll-behavior: smooth;
+
+    /* 
+      Adds padding to the top of the scroll position.
+      Useful when using a fixed header/navbar, so that anchor-linked sections are not hidden behind it.
+      The value (100px) should match or exceed your navbar's height.
+    */
+    scroll-padding: 100px;
+}

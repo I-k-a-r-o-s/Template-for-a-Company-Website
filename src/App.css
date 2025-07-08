@@ -1,0 +1,33 @@
+/* 
+  .animate-marquee:
+  This class applies a continuous horizontal scrolling animation to its element.
+  It's typically used for marquee effects, such as scrolling logos or text.
+*/
+.animate-marquee{
+    animation:marquee 25s linear infinite;
+}
+
+/*
+  @keyframes marquee:
+  Defines the animation for the marquee effect.
+  The element starts at its original position (0%) and moves left by 50% of its width (100%).
+  This creates a seamless, infinite horizontal scroll when the content is duplicated.
+*/
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/*
+  .clip-path-slant:
+  This class clips the element into a slanted polygon shape using the CSS clip-path property.
+  It's often used for decorative backgrounds or section dividers to create a modern, angled look.
+  The polygon coordinates define the slant: the top left is inset, the rest are at the element's edges.
+*/
+.clip-path-slant {
+    clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0 100%);
+}
