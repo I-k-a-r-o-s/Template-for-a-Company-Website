@@ -1,7 +1,11 @@
 # Installl instructions
+
 1.Clone this project
+
 2.Open using VSCode
+
 3.Open terminal and run "npm install"
+
 4.Then enter "npm run dev"
 
 
